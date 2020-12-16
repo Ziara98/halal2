@@ -1,0 +1,94 @@
+/*Gilroy*/
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot'),
+    url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.svg#Gilroy-Light') format('svg'),
+    url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Light/Gilroy-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot');
+  src: url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.svg#Gilroy-Regular') format('svg'),
+    url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.eot');
+  src: url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.svg#Gilroy-Bold') format('svg'),
+    url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.eot');
+  src: url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.svg#Gilroy-SemiBold')format('svg'),
+    url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Semibold/Gilroy-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.eot');
+  src: url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.svg#Gilroy-Black') format('svg'),
+    url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Black/Gilroy-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*Tinos*/
+
+@font-face {
+  font-family: 'Tinos-Regular';
+  src: url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.eot');
+  src: url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.svg#Tinos-Regular') format('svg'),
+    url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.ttf') format('truetype'),
+    url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.woff') format('woff'),
+    url('../fonts/Tinos/Tinos-Regular/Tinos-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Tinos-Italic';
+  src: url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.eot');
+  src: url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.svg#Tinos-Regular') format('svg'),
+    url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.ttf') format('truetype'),
+    url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.woff') format('woff'),
+    url('../fonts/Tinos/Tinos-Italic/Tinos-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

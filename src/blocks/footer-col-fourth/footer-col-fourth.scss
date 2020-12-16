@@ -1,0 +1,48 @@
+.footer-col-fourth {
+    @include size-xxs(12);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    order: 1;
+
+
+    @include sm-block() {
+        margin-top: rem-calc(70);
+        margin-left: rem-calc(30);
+        @include size-sm(6);
+        order: 4;
+    }
+
+
+    @include md-block() {
+        margin-top: rem-calc(80);
+    }
+
+    @include lg-block() {
+        margin-top: 0;
+    }
+}
+
+.fourth-title {
+    margin-top: rem-calc(-40);
+    margin-bottom: rem-calc(10);
+
+    @include lg-block() {
+        margin-bottom: rem-calc(30);
+
+    }
+}
+
+.col-title {
+    margin-bottom: rem-calc(15);
+}
+
+.footer-col-fourth-bottom {
+    margin-top: rem-calc(25);
+
+    @include lg-block() {
+        margin-top: 0;
+
+
+    }
+}

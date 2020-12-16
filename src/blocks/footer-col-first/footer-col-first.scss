@@ -1,0 +1,38 @@
+.footer-col-first {
+    @include size-xxs(12);
+
+    @include sm-block() {
+        @include size-sm(5);
+    }
+
+    @include md-block() {
+        @include size-md(4);
+    }
+
+    @include lg-block() {
+        @include size-lg(3);
+    }
+}
+
+.footer-first-title {
+    font-size: rem-calc(20);
+    line-height: rem-calc(34);
+    color: #60292F;
+
+    @include sm-block() {
+        font-size: rem-calc(30);
+
+    }
+}
+
+.footer-first-text {
+    font-size: rem-calc(18);
+    line-height: rem-calc(34);
+    color: #60292F;
+    margin-top: rem-calc(42);
+
+    @include sm-block() {
+        font-size: rem-calc(28);
+        margin-top: rem-calc(62);
+    }
+}

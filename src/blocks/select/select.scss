@@ -1,0 +1,116 @@
+.wrapper {
+    position: relative;
+}
+
+.wrapper:before {
+    @include xs-block() {
+        position: absolute;
+        content: '';
+        width: rem-calc(44);
+        height: rem-calc(44);
+        background: #B54E55;
+        top: 0;
+        left: rem-calc(-60);
+        background-image: url('../img/icons/map.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.select_wrap {
+    width: rem-calc(255);
+    position: relative;
+    user-select: none;
+    margin: 0 auto;
+
+    @include xs-block() {
+        margin: 0;
+    }
+}
+
+.select_wrap .default_option {
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.select_wrap .default_option li {
+    padding: rem-calc(14) rem-calc(11) rem-calc(13);
+}
+
+.select_wrap .default_option:before {
+    content: "";
+    position: absolute;
+    top: rem-calc(22);
+    right: rem-calc(18);
+    width: rem-calc(9);
+    height: rem-calc(5);
+    background: url('../img/icons/line.svg') center no-repeat;
+    background-size: cover;
+    transition: transform, top 0.3s, 0.4s linear;
+}
+
+
+.select_wrap .select_ul {
+    position: absolute;
+    top: rem-calc(48);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    font-size: rem-calc(15);
+    box-shadow: 0 rem-calc(5) rem-calc(5) rem-calc(-5) #333;
+    border-radius: 0 0 rem-calc(12) rem-calc(12);
+    z-index: 10;
+}
+
+.select_wrap .select_ul li {
+    padding: rem-calc(9) rem-calc(20);
+    cursor: pointer;
+    margin: 0;
+
+    @include md-block() {
+        padding: rem-calc(10) rem-calc(20);
+    }
+}
+
+
+.select_wrap .select_ul li:last-child:hover {
+    border-bottom-left-radius: rem-calc(15);
+    border-bottom-right-radius: rem-calc(15);
+}
+
+.select_wrap .select_ul li:hover {
+    background: #fff4dd;
+}
+
+.select_wrap .option {
+    display: flex;
+    align-items: center;
+    font-size: rem-calc(16);
+    line-height: rem-calc(19);
+    color: #000000;
+    @include Gilroy-Regular;
+}
+
+.select_wrap .option .icon {
+    background: url('../img/sprite.png') no-repeat 0 0;
+    width: rem-calc(30);
+    height: rem-calc(32);
+}
+
+.select_wrap.active .select_ul {
+    display: block;
+    margin-bottom: rem-calc(30);
+
+    @include md-block() {
+        margin-bottom: 0;
+
+    }
+}
+
+.select_wrap.active .default_option:before {
+    top: rem-calc(20);
+    transform: rotate(-180deg);
+}

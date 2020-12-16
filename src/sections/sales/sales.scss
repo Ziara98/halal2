@@ -1,0 +1,13 @@
+.section__sales {
+    padding-bottom: rem-calc(123);
+}
+
+
+.sales__main-title {
+    display: flex;
+    justify-content: center;
+    font-size: rem-calc(40);
+    line-height: rem-calc(46);
+    color: #491F25;
+    @include Tinos-Regular;
+}

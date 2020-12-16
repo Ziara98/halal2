@@ -1,0 +1,13 @@
+.section__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: rem-calc(138);
+    background: #F4EDE4;
+
+
+    @include sm-block() {
+        background: none;
+        padding-top: 0;
+    }
+}

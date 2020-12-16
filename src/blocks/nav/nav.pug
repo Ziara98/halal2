@@ -1,0 +1,37 @@
+.nav__inner
+    .container
+        ul.nav__list
+            li.nav__item
+                a(href="#").nav__link Продукция
+            li.nav__item
+                a(href="#").nav__link  Производство
+            li.nav__item
+                a(href="#").nav__link  Новости 
+            .logo
+                a(href="#")
+                    img(src='img/icons/logo.svg')
+            li.nav__item
+                a(href="#").nav__link  О компании
+            li.nav__item
+                a(href="#").nav__link  Где купить 
+            li.nav__item
+                a(href="#").nav__link  Контакты 
+            .nav__socials-inner
+                .nav__socials
+                    svg(class="social__link-nav")
+                        use(xlink:href="img/icons/sprite.svg#insta")
+                .nav__socials
+                    svg(class="social__link-nav nav-fb")
+                        use(xlink:href="img/icons/sprite.svg#fb")
+            .nav__mail 
+                svg(class="nav-mail_svg")
+                    use(xlink:href="img/icons/sprite.svg#mail")
+                p.nav-mail halalfood@mail.com
+            .nav__phone
+                svg(class="nav-mail_svg")
+                    use(xlink:href="img/icons/sprite.svg#call")
+                p.nav-phone +7 978 777 77 77
+.burger__inner
+    button#menu__button.cmn-toggle-switch.cmn-toggle-switch__htx
+        span toggle menu
+    p.menu menu

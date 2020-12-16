@@ -1,0 +1,32 @@
+.footer__inner {
+    padding: rem-calc(94) 0 rem-calc(60);
+}
+
+
+.footer__items {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+    @include lg-block() {
+        flex-wrap: nowrap;
+    }
+}
+
+.footer__items:last-child {
+    justify-content: space-between;
+}
+
+.footer__rights {
+    font-size: rem-calc(13);
+    line-height: rem-calc(17);
+    letter-spacing: rem-calc(0.277857);
+    color: #92989F;
+    margin-top: rem-calc(71);
+    display: none;
+
+    @include sm-block() {
+        display: flex;
+    }
+}

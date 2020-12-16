@@ -1,0 +1,46 @@
+/* FONTS */
+
+
+@mixin Gilroy-Light ($font-family: 'Gilroy-Light', $font-weight: 300, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin Gilroy-Regular ($font-family: 'Gilroy-Regular', $font-weight: 400, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin Gilroy-SemiBold($font-family: 'Gilroy-SemiBold', $font-weight: 600, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin Gilroy-Bold($font-family: 'Gilroy-Bold', $font-weight: 700, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin Gilroy-Black ($font-family: 'Gilroy-Black', $font-weight: 900, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+/*Tinos*/
+
+@mixin Tinos-Regular ($font-family: 'Tinos-Regular', $font-weight: 400, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin Tinos-Italic ($font-family: 'Tinos-Italic', $font-weight: 400, $font-style: italic) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}

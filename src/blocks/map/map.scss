@@ -1,0 +1,36 @@
+.map__inner {
+    width: 100%;
+    display: flex;
+    order: -1;
+
+
+    @include sm-block() {
+        order: 2;
+    }
+
+    @include md-block() {
+        width: 100%;
+    }
+
+    @include lg-block() {
+        width: 50%;
+    }
+
+
+}
+
+
+.map__inner {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map__inner iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

@@ -1,0 +1,25 @@
+.contacts__inner
+    include ../../blocks/contacts-title/contacts-title.pug
+    .contacts__select
+        include ../../blocks/select/select.pug
+    .contacts__card-inner
+        .contacts__card
+            img(src="../img/contacts/contacts1.png" alt="")
+            .contacts__text
+                p.contacts__name Фирменный магазин
+                p.contacts__street ул. Севастопольская, 57
+            .contacts__rate
+                .rate
+                    img(src="../img/icons/rate.svg")
+                p.contacts__map На карте
+        .contacts__card
+            img(src="../img/contacts/contacts2.png" alt="")
+            .contacts__text
+                p.contacts__name Фирменный магазин
+                p.contacts__street ул. Севастопольская, 57
+            .contacts__rate
+                .rate
+                    img(src="../img/icons/rate.svg")
+                p.contacts__map На карте
+    .contacts__button
+        button(type="button" class="btn-contacts") Смотреть все магазины

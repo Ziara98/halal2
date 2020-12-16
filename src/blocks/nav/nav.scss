@@ -1,0 +1,287 @@
+.nav__inner {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    transition: left 0.6s linear;
+
+    @include md-block() {
+        display: flex;
+        width: auto;
+    }
+
+    &--open {
+        // display: flex;
+        left: 0;
+        background: #fff;
+    }
+}
+
+.nav__inner--open .logo {
+    display: none;
+}
+
+.menu {
+    z-index: 99;
+    position: absolute;
+}
+
+.nav__list {
+
+    @include Tinos-Regular;
+    // background: url('../img/icons/logo.svg')center no-repeat;
+
+    height: 100vh;
+    background: url(../img/intro.jpg)center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin-left: rem-calc(73);
+    width: 100%; //всегда должна быть 100%  
+    z-index: 99;
+    justify-content: center;
+    overflow-y: scroll;
+    // display: none;
+
+    @include md-block() {
+        height: rem-calc(40);
+        margin-top: rem-calc(30);
+        overflow-y: visible;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+
+.nav__item {
+    font-size: rem-calc(18);
+    line-height: rem-calc(21);
+    margin: rem-calc(28) 0 rem-calc(23) 0;
+    // position: relative;
+}
+
+// .nav__item:before {
+//     content: '';
+//     position: absolute;
+//     background: red;
+//     width: 20px;
+//     height: 20px;
+//     top: 0;
+//     left: 0;
+// }
+
+.nav__link {
+    color: #491F25;
+}
+
+.nav__socials-inner {
+    display: flex;
+    margin-bottom: rem-calc(39);
+
+    @include md-block() {
+        display: none;
+    }
+}
+
+.social__link-nav {
+    width: rem-calc(29);
+    height: rem-calc(29);
+    background: #F4EDE4;
+    border-radius: rem-calc(3);
+    margin-right: rem-calc(8);
+    padding: rem-calc(8);
+    stroke: #9C464B;
+    fill: none;
+}
+
+.nav__mail,
+.nav__phone {
+    display: flex;
+
+    @include md-block() {
+        display: none;
+    }
+}
+
+.nav__mail {
+    margin-bottom: rem-calc(40);
+
+    @include md-block() {
+        display: none;
+    }
+}
+
+.nav-mail_svg {
+    width: rem-calc(16);
+    height: rem-calc(16);
+    stroke: #9C464B;
+    fill: none;
+    margin-right: rem-calc(10);
+}
+
+.burger__inner {
+    background: #fff;
+    padding: rem-calc(35);
+    background: url('../img/icons/logo.svg') center no-repeat;
+
+    @include md-block() {
+        // padding: 0;
+        background: none;
+    }
+}
+
+.nav__inner--open .burger__inner {
+    border-bottom: 2px solid red;
+    width: 100%;
+}
+
+
+
+/*burger*/
+.cmn-toggle-switch {
+    position: absolute;
+    z-index: 8000;
+    top: rem-calc(7); // Позиционирование бургера по оси X
+    left: rem-calc(14); // Позиционирование бургера по оси Y
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: rem-calc(44); // Общие размеры бургера (ширина)
+    height: rem-calc(40); // Общие размеры бургера (высота)
+    overflow: hidden;
+    font-size: 0;
+    text-indent: rem-calc(-9999);
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+
+    @include md-block() {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    span {
+        // Средняя линия бургера
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: rem-calc(5);
+        right: rem-calc(5);
+        width: rem-calc(32);
+        height: rem-calc(3);
+        margin: auto;
+        display: block;
+        border-radius: rem-calc(5);
+        background-color: #491F25;
+
+        // Изменения стилей средней линии на определенных размерах экрана (если необходимо)
+
+
+        &::before,
+        // Верхняя линия бургера
+        &::after {
+            // Нижняя линия бургера
+            position: absolute;
+            content: "";
+            left: 0;
+            display: block;
+            width: 100%;
+            height: rem-calc(3);
+            border-radius: rem-calc(5);
+            background-color: #491F25;
+        }
+
+        // Изменения стилей верхней и нижней линий на определенных размерах экрана (если необходимо)
+        &::before {
+            top: rem-calc(9);
+        }
+
+        &::after {
+            bottom: rem-calc(9);
+        }
+    }
+}
+
+// Стили бургера после образования крестика
+.cmn-toggle-switch__htx {
+    width: rem-calc(56);
+    height: rem-calc(56);
+    background: transparent;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+
+    // Стили средней линии после образования крестика
+    span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // Стили верхней и нижней линий после образования крестика
+        &::before,
+        &::after {
+            transition-duration: 0.3s, 0.3s;
+            transition-delay: 0.1s, 0;
+        }
+
+        &::before {
+            transition-property: top, transform;
+            width: rem-calc(13);
+        }
+
+        &::after {
+            transition-property: bottom, transform;
+        }
+    }
+}
+
+
+// Активный класс (.active), который добавляется через js для активации бургера
+.cmn-toggle-switch__htx.active {
+    height: rem-calc(59);
+    width: rem-calc(59);
+    background: #9C464B;
+    border-radius: 0;
+    left: 79%;
+    top: 5%;
+    transform: translate(-66%, -5%);
+
+    // Стили средней линии при образовании крестика
+    span {
+        background: transparent; // Прозрачный фон средней линии, чтобы ее не было видно после образования крестика
+        width: rem-calc(20);
+        right: rem-calc(15);
+
+        // Стили верхней и нижней линий при образовании крестика
+        &::before,
+        &::after {
+            transition-delay: 0, 0.5s;
+        }
+
+        // Разворот нижней линии
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+            background: #fff;
+            width: 100%;
+        }
+
+        // Разворот верхней линии
+        &::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+            background: #fff;
+
+        }
+    }
+}
+
+/* end of burger*/

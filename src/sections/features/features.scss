@@ -1,0 +1,119 @@
+.section__features {
+    position: relative;
+    background: url('../img/icons/leaves-top.svg')top no-repeat,
+        url('../img/icons/leaves-bottom.svg')bottom no-repeat;
+}
+
+
+.features__img {
+
+    width: rem-calc(327);
+    height: rem-calc(327);
+    position: relative;
+
+    @include sm-block() {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        width: rem-calc(400);
+        height: rem-calc(400);
+
+    }
+
+    @include md-block() {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem-calc(450);
+        height: rem-calc(450);
+    }
+
+    @include mx-block() {
+
+        width: rem-calc(540);
+        height: rem-calc(540);
+    }
+
+    @include lg-block() {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem-calc(575);
+        height: rem-calc(575);
+        // background-size: auto;
+
+    }
+}
+
+.feat-img {
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include sm-block() {
+
+        top: 10%;
+        left: 25%;
+        transform: none;
+
+    }
+
+    @include md-block() {
+        position: absolute;
+        width: 230px;
+        height: auto;
+        left: 100px;
+        transform: none;
+        top: 0;
+    }
+
+    @include mx-block() {
+        left: rem-calc(70);
+        width: auto;
+        height: auto;
+    }
+
+    @include lg-block() {
+        left: rem-calc(90);
+
+    }
+}
+
+.feat-img2 {
+    position: absolute;
+    left: rem-calc(80);
+    top: rem-calc(60);
+    width: 200px;
+    height: 320px;
+    display: none;
+
+    @include md-block() {
+        display: block;
+        width: 230px;
+        height: 300px;
+        left: 150px;
+    }
+
+    @include mx-block() {
+        left: rem-calc(180);
+        top: rem-calc(80);
+        width: auto;
+        height: auto;
+    }
+
+    @include lg-block() {
+        // position: absolute;
+        left: rem-calc(200);
+        top: rem-calc(70);
+    }
+}
+
+
+.feat-img3 {}
